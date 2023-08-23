@@ -11,18 +11,10 @@ def greeting():
 @app.route("/calculator/add", methods=['POST'])
 def add():
     return ''
-    data = request.get_json()
-
-
-    return { "result" : data["first"] + data["second"] }
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
     return ''
-    data = request.get_json()
-
-
-    return { "result": data["first"] - data["second"] }
 
 
 if __name__ == '__main__':
